@@ -1,0 +1,31 @@
+#include <iostream>
+#include <conio.h>
+#include <string>
+
+using namespace std;
+int main ()
+
+{
+  float billA, hours, billB;
+  int a;
+  
+  cout << "Please specify which package were purchased" << endl;
+  cout << "1 for A, 2 for B, 3 for C"<< endl;
+  cin>> a;
+  cout<< "Pleace select how many hours were used" << endl;
+  cin>> hours;
+  billA = (hours*20) +995;
+  billB = (hours*10) +1495;
+  
+  {
+    if (a=1)
+    cout<<billA<<"/"<<"month"<< endl;
+    else if (a=2)
+    cout<<billB<<"/"<<"month<<endl;
+    else if (a=3)
+    cout<<"1995 mo, no additional hours "<<endl;
+    else
+    cout <<"Invalid""<<endl;
+    return 0;
+    }
+    }
